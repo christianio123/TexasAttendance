@@ -4300,7 +4300,7 @@ GarlandDistrictLevelData <- plyr::ldply(DistrictGarland) %>%
          AttendancePercent = as.numeric(AttendancePercent),
          District = 'GARLAND ISD',
          County = 'Dallas')
-
+year(GarlandDistrictLevelData$Day) <- 2020
 
 
 # Dallas
@@ -4886,6 +4886,9 @@ SchoolLevelDataset$AbsentPercent <- round(SchoolLevelDataset$AbsentPercent,2)
 
 
 
+
+# Update 05/10/2021
+# Change 2021 to 2020 on dates for Garland ISD
 
 
 
